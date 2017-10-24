@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+/* Super Macro */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #32292f;
+    padding-top: 3.5rem;
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #f2f2f2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #f2f2f2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.jumbotron {
+    background: #fff;
+    margin-bottom: 0;
+    padding-top: 3.5rem;
+}
+
+.card {
+    border: none;
+}
+
+.col-sm-4, .col-sm-8 {
+    display: flex;
+}
+
+.col-sm-8 {
+    flex-direction: column;
+    background-color: white;
+}
+
+.col-md-5, col-md-7 {
+    display: inherit;
+    align-items: center;
+}
+
+div.row.theme {
+    align-items: center;
+}
+
+
+/* Navigation
+______________________________*/
+
+.navbar {
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+.navbar.navbar-expand-md {
+    background-color: #FAFAFA;
+    border-bottom: 3px solid #833ab4;
+}
+
+a.nav-link {
+    color: #32292f;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link:hover {
+    color: #833ab4;
+    text-decoration: underline;
+    font-weight: 800
+}
+
+nav ul {
+    position: absolute;
+    bottom: 0;
+}
+
+nav img {
+    max-height: 60px; 
+    padding-right: 2%;
+}
+
+
+/* Animation
+______________________________*/
+
+.jumbotron {
+    animation: slideLeft 1s;
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(1000px) }
+  to { transform: translateX(0) }
+}
+
+
+/* Responsive
+______________________________*/
+
+@media (min-width: 40em) {
+  .theme-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .theme-heading {
+/*    margin-top: 7rem;*/
+  }
+}
+
+
+/* Ken's Profile
+______________________________*/
+.ken {
+  overflow: hidden;
+    border: 1px solid #f2f2f2;
+    height: 100%;    
+}
+
+.ken img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+  filter: grayscale(100%)
+}
+
+.ken figcaption {
+  width: 100%;
+  padding: 25px;
+  position: relative;
+    
+}
+
+.ken figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 0 400px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.ken .profile {
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  z-index: 1;
+  max-width: 110px;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0%)
+}
+
+
+/* Container for THEMES
+------------------------- */
+.marketing .col-lg-4 {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.marketing {
+    padding-top: 5%;
+}
+
+
+/* THEMES
+------------------------- */
+.theme-divider {
+  margin: 1.5rem 0;
+  opacity: .5;
+}
+
+.theme-heading {
+    line-height: 1;
+    letter-spacing: -.05rem;
+    font-family: 'Permanent Marker', cursive;
+    color: #833ab4;
+    font-size: 2.8em;
+    font-weight: 800;
+    letter-spacing: .15rem;
+}
+
+.theme img {
+    object-fit: cover; 
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.theme-image {
+    height: 100%;
+    width: 100%;
+}
+
+.tint {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  filter: grayscale(100%);
+  transition: all .3s linear;
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.tint:hover {
+    filter: none;
+}
+
+
+/* Typography
+------------------------- */
+.greet {
+    text-align: center;
+    padding-bottom: 5%
+}
+
+.motto {
+    font-family: 'Permanent Marker', cursive;
+    color: #833ab4;
+    font-size: 2.8em;
+    font-weight: 800;
+    padding-bottom: 2%;
+}
+
+.button {
+    color: #833ab4;
+    border: 1px solid #833ab4;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.button:hover {
+    background-color: #833ab4;
+    color: white;
+    text-decoration: none;
+}
+
+span.avoidwrap { 
+    display:inline-block; 
+}
+
+.text-muted {
+    font-size: 1.2em;
+    display: block;
+}
+
+p {
+    padding-top: 1rem;
+    line-height: 2rem;
+}
+
+h5 {
+    color: #d0d0d0;
+}
+
+
+
+
+
